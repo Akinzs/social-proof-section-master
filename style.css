@@ -3,12 +3,14 @@ body {
   font: League Spartan;
 }
 .main {
-  margin: 5% 10% 2% 10%;
+  margin: 5% 5% 2% 5%;
   padding: 10%;
   font-size: 12px;
   box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 4px;
   background: url(images/bg-pattern-bottom-desktop.svg) top -20px left -50px
       no-repeat,
@@ -16,9 +18,13 @@ body {
 }
 .brand {
   display: flex;
-  gap: 18%;
-  padding: 8px;
+  justify-content: space-between;
+
+  padding-bottom: 24px;
+  align-items: center;
+  width: 792px;
 }
+
 .brand .product h3 {
   margin: 0;
   font-weight: 1000;
@@ -61,6 +67,7 @@ body {
   padding: 8px;
   overflow: hidden;
   color: rgb(153, 114, 148);
+  width: 240px;
 }
 .review_section .user {
   display: flex;
@@ -96,15 +103,16 @@ body {
   text-decoration: none;
 }
 
-@media screen and (max-width: 967px) {
+@media screen and (max-width: 948px) {
   .main {
-    margin: 30%;
-    padding: 2%;
     padding: 2%;
     padding-bottom: 4%;
   }
   .brand {
     flex-direction: column;
+    gap: 10px;
+    padding: 5%;
+    width: auto;
   }
   .review {
     flex-direction: column;
@@ -115,5 +123,15 @@ body {
   }
   .product-rating .rating_col {
     position: static;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main {
+    padding: 2%;
+    padding-bottom: 4%;
+  }
+  .brand {
+    gap: 10px;
+    width: auto;
   }
 }
